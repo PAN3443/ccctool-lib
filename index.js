@@ -4,7 +4,7 @@ let CCC_Color = Class_Color.CCC_Color;
 ////////// Test /////////
 /// ->node
 /// ->test = require('./index');
-/// ->test.testColor();
+/// ->test.fullTest_Color();
 
 module.exports = {
   ////////////////////////////
