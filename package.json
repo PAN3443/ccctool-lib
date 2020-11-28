@@ -1,12 +1,54 @@
 {
-  "name": "node_CMS",
-  "version": "1.0.0",
+  "name": "ccctool-cms",
+  "version": "0.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
-  "keywords": [],
+  "keywords": [
+    "color",
+    "colormap",
+    "color-map",
+    "color map",
+    "color table",
+    "color-table",
+    "colortable",
+    "CCC",
+    "CCCTool",
+    "CCC-Tool",
+    "ccc",
+    "ccctool",
+    "ccc-tool",
+    "perception",
+    "color difference",
+    "CMS",
+    "cms",
+    "din99",
+    "Din99",
+    "DIN99",
+    "rgb",
+    "Rgb",
+    "RGB",
+    "hsv",
+    "Hsv",
+    "HSV",
+    "lab",
+    "Lab",
+    "LAB",
+    "lch",
+    "Lch",
+    "LCH",
+    "lms",
+    "Lms",
+    "LMS",
+    "xyz",
+    "Xyz",
+    "XYZ"
+  ],
   "author": "Pascal Nardini",
-  "license": "ISC"
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
 }
