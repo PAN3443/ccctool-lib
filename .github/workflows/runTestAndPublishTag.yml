@@ -49,9 +49,6 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Await manual approval
-        uses: hmarr/auto-approve-action@v2
-
       - name: Authenticate with npm
         run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
 
