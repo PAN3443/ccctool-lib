@@ -1,0 +1,58 @@
+{
+  "type": "module",
+  "name": "ccctool-lib",
+  "version": "0.1.5",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "keywords": [
+    "color",
+    "colormap",
+    "color-map",
+    "color map",
+    "color table",
+    "color-table",
+    "colortable",
+    "CCC",
+    "CCCTool",
+    "CCC-Tool",
+    "ccc",
+    "ccctool",
+    "ccc-tool",
+    "perception",
+    "color difference",
+    "CMS",
+    "cms",
+    "din99",
+    "Din99",
+    "DIN99",
+    "rgb",
+    "Rgb",
+    "RGB",
+    "hsv",
+    "Hsv",
+    "HSV",
+    "lab",
+    "Lab",
+    "LAB",
+    "lch",
+    "Lch",
+    "LCH",
+    "lms",
+    "Lms",
+    "LMS",
+    "xyz",
+    "Xyz",
+    "XYZ"
+  ],
+  "author": "Pascal Nardini",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "dependencies": {
+    "jsdom": "^25.0.1"
+  }
+}
