@@ -40,13 +40,22 @@ jobs:
         with:
           node-version: '22'
 
+      - name: Set version from Git tag
+        run: |
+          VERSION=$(echo ${GITHUB_REF#refs/tags/}) # Git-Tag extrahieren
+          echo "Setting version to $VERSION"
+          jq --arg VERSION "$VERSION" '.version = $VERSION' package.json > temp.json && mv temp.json package.json
+
       - name: Install dependencies
         run: npm install
 
       - name: Await manual approval
         uses: hmarr/auto-approve-action@v2
 
+      - name: Authenticate with npm
+        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
+
       - name: Publish package
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npm publish
+        run: npm publish --access public
